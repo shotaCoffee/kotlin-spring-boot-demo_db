@@ -26,7 +26,7 @@ class MainController {
     @PostMapping("/update")
     fun updateUser(@RequestParam id: Int, name: String): String {
         userRepository.save(User(id, name))
-        return "update user"
+        return "user updated"
     }
 
     @PostMapping("/delete")
